@@ -31,7 +31,7 @@ try:
 
     while True:
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(SCROLL_PAUSE_TIME)
+        time.sleep(1)
         new_height = driver.execute_script("return document.body.scrollHeight")
         if new_height == last_height:
             break
@@ -53,8 +53,7 @@ try:
 
 
     
-    print (srcimages)
-    print (altimages)
+    
    
 
     for i in range(len(srcimages)):
